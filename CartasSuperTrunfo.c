@@ -37,4 +37,4 @@ int main() {
     printf("Area: %.2f - Pib: %.2f - Pontos Turisticos: %d\n", Area, Pib, pontos);
 
     return 0;
-
+}
