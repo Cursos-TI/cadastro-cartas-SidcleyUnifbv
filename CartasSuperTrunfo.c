@@ -7,6 +7,9 @@ int main() {
     char Estado[50];
     char codigo[5];
     char Cidade[50];
+    float Densidade;
+    float Percapito;
+
 
     printf("Digite Estado: \n");    //Digite Estado permite espaço
     scanf(" %[^\n]", Estado);
@@ -29,12 +32,18 @@ int main() {
     printf("Quantidade de pontos turisticos: \n");  // Quantidade de Pontos turisticos
     scanf("%d", &pontos);
 
+    Densidade = (float) populacao / Area;
+    Percapito = (float) Pib / populacao;
+
+
     printf("\n----- DADOS INFORMADOS -----\n"); // Mensagem a ser impressa
 
     printf("Estado: %s \n", Estado);    // tudo o que vai ser impresso na tela
     printf("Codigo: %s \n", codigo);
     printf("Cidade: %s - Populacao: %d\n", Cidade, populacao);
     printf("Area: %.2f - Pib: %.2f - Pontos Turisticos: %d\n", Area, Pib, pontos);
+    printf("Densidade populacinal: %f \n", Densidade);
+    printf("Pib percapito: %f \n", Percapito);
 
     return 0;
 }
